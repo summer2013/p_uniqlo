@@ -1,0 +1,89 @@
+html, body {
+	height: 100%;
+	text-align: center;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.page1 {
+	background-image: url("../imgs/p1/bg.jpg");
+	.brand {
+		margin-top: 6em;
+	}
+	main {
+		margin-top: 6em;
+		.happy {
+			width: 20em;
+		}
+		.font-wrap {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.year {
+				width: 8em;
+				padding: 1em;
+			}
+			.snow {
+				width: 2em;
+			}
+		}
+	}
+	> footer {
+		position: relative;
+		margin-top: 6em;
+		position: relative;
+		margin: 2em;
+		margin-top: 5em;
+		height: 12em;
+		> img {
+			position: absolute;
+			width: 3.5em;
+			height: 3.2em;
+			&:first-child {
+				left: 1em;
+				bottom: 1em;
+			}
+			&:nth-child(2) {
+				left: 3.5em;
+				bottom: 3.3em;
+			}
+			&:nth-child(3) {
+				left: 5.8em;
+				bottom: 5.9em;
+			}
+			&:nth-child(4) {
+				right: 9.3em;
+				top: 2.5em;
+			}
+			&:nth-child(5) {
+				bottom: 5.9em;
+				right: 5.8em;
+			}
+			&:nth-child(6) {
+				bottom: 3.3em;
+				right: 3.5em;
+			}
+			&:nth-child(7) {
+				bottom: 1em;
+				right: 1em;
+			}
+			&:last-child {
+				top: 7.8em;
+				left: 10em;
+				height: 4em;
+				width: 2em;
+			}
+		}
+	}
+}
+
+.page2 {
+	background-image: url("../imgs/p2/bg.jpg");
+}
+
+.page3 {
+	background: green;
+}
