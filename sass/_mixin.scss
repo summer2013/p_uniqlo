@@ -1,0 +1,22 @@
+@mixin vSplitter($height) {
+	.splitter {
+		display: inline-block;
+		background: white;
+		height: $height;
+		border-right: 0.01em solid #fff;
+	}
+}
+
+@mixin hCenterAbsoluteDiv($top) {
+	position: absolute;
+	left: 50%;
+	top: $top;
+	transform: translate(-50%, 0);
+}
+
+@mixin centerAbsoluteDiv() {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}

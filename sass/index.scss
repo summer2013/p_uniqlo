@@ -1,6 +1,7 @@
+@import "mixin";
+
 html, body {
 	height: 100%;
-	text-align: center;
 }
 
 .swiper-container {
@@ -11,70 +12,79 @@ html, body {
 .page1 {
 	background-image: url("../imgs/p1/bg.jpg");
 	.brand {
-		margin-top: 6em;
+		@include hCenterAbsoluteDiv(10vh);
+		width: 40vw;
 	}
 	main {
-		margin-top: 6em;
+		position: relative;
+		margin-top: 30vh;
+		height: 23.6vh;
+		border: 1px solid transparent; // for bfc
 		.happy {
-			width: 20em;
+			@include hCenterAbsoluteDiv(0);
+			width: 80vw;
 		}
 		.font-wrap {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			margin-top: 6vh;
 			.year {
-				width: 8em;
-				padding: 1em;
+				width: 28vw;
+				padding: 5vw;
 			}
 			.snow {
-				width: 2em;
+				width: 6vw;
 			}
 		}
 	}
 	> footer {
+		$box-width: 90vw;
+		$img-width: 15vw;
+
 		position: relative;
-		margin-top: 6em;
-		position: relative;
-		margin: 2em;
-		margin-top: 5em;
-		height: 12em;
+		margin: 0 auto;
+		margin-top: 20vh;
+		width: $box-width;
+		height: 30vh;
+
 		> img {
 			position: absolute;
-			width: 3.5em;
-			height: 3.2em;
+			width: $img-width;
+			height: 6vh;
 			&:first-child {
-				left: 1em;
-				bottom: 1em;
+				top: 12.5vh;
+				left: 2vw;
 			}
 			&:nth-child(2) {
-				left: 3.5em;
-				bottom: 3.3em;
+				top: 7.5vh;
+				left: 12vw;
 			}
 			&:nth-child(3) {
-				left: 5.8em;
-				bottom: 5.9em;
+				top: 2.9vh;
+				left: 23vw;
 			}
 			&:nth-child(4) {
-				right: 9.3em;
-				top: 2.5em;
+				top: 0;
+				left: $box-width/2 - $img-width/2;
 			}
 			&:nth-child(5) {
-				bottom: 5.9em;
-				right: 5.8em;
+				top: 2.9vh;
+				right: 23vw;
 			}
 			&:nth-child(6) {
-				bottom: 3.3em;
-				right: 3.5em;
+				top: 7.5vh;
+				right: 12vw;
 			}
 			&:nth-child(7) {
-				bottom: 1em;
-				right: 1em;
+				top: 12.5vh;
+				right: 2vw;
 			}
 			&:last-child {
-				top: 7.8em;
-				left: 10em;
-				height: 4em;
-				width: 2em;
+				top: 12vh;
+				left: $box-width/2 - 8/2;
+				width: 8vw;
+				height: 10vh;
 			}
 		}
 	}
@@ -82,8 +92,36 @@ html, body {
 
 .page2 {
 	background-image: url("../imgs/p2/bg.jpg");
+	background-position: center, center;
+
+	.desc {
+		@include centerAbsoluteDiv();
+		@include vSplitter(10vh);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		padding: 5vw;
+		width: 100%;
+		box-sizing: border-box;
+
+		background-color: rgba(64, 66, 73, 0.8);
+
+		.detail {
+			margin-right: 5vw;
+			width: auto;
+			height: 10vh;
+		}
+		.brand {
+			margin-left: 5vw;
+			width: auto;
+			height: 7vh;
+		}
+	}
 }
 
 .page3 {
-	background: green;
+	background-image: url("../imgs/p3/bg2.png");
+	background-position: center, center;
 }
