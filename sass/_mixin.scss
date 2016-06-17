@@ -1,17 +1,15 @@
-@mixin vSplitter($height) {
+@mixin vSplitter($height, $color:#fff) {
 	.splitter {
 		display: inline-block;
-		background: #fff;
 		height: $height;
-		border-right: 0.01rem solid #fff;
+		border-right: 0.01rem solid $color;
 	}
 }
 
-@mixin hSplitter($width) {
+@mixin hSplitter($width, $color:#fff) {
 	.splitter {
-		background: #fff;
 		width: $width;
-		border-top: 0.01rem solid #fff;
+		border-top: 0.01rem solid $color;
 	}
 }
 
@@ -27,4 +25,12 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+}
+
+@mixin sRedDiv($width:6.5vw, $height:1vh) {
+	.s-red-div {
+		width: $width;
+		height: $height;
+		background-color: red;
+	}
 }
