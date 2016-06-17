@@ -1,3 +1,4 @@
+@import "variable";
 @import "mixin";
 
 html, body {
@@ -136,7 +137,6 @@ html, body {
 		background-image: url("../imgs/p3/bg1.png");
 		background-repeat: no-repeat;
 		z-index: 5;
-
 	}
 	.desc {
 		@include hSplitter(23vw);
@@ -172,6 +172,7 @@ html, body {
 }
 
 .page4 {
+	display: none;
 	background-image: url("../imgs/p4/bg1.png");
 	background-size: cover;
 	.main-bg {
@@ -225,4 +226,111 @@ html, body {
 			width: 26vw;
 		}
 	}
+}
+
+.page5 {
+	background-color: $red;
+	.desc {
+		z-index: 4;
+		@include hSplitter(77vw, #000);
+		@include sRedDiv();
+		position: relative;
+		.s-red-div {
+			position: absolute;
+			top: 0.4vh;
+			right: 5vw;
+		}
+		.splitter {
+			position: absolute;
+			right: 5vw;
+		}
+		.splitter1 {
+			@extend .splitter;
+			top: 1.5vh;
+		}
+		.splitter2 {
+			@extend .splitter;
+			top: 8vh;
+			width: 57vw;
+		}
+		[class^="zi"] {
+			position: absolute;
+			right: 5vw;
+		}
+		.zi1 {
+			top: 3vh;
+			width: 76vw;
+		}
+		.zi2 {
+			top: 9vh;
+			width: 20vw;
+		}
+		background-color: white;
+		width: 85vw;
+		height: 14vh;
+		margin: 0 auto;
+		margin-top: 5vh;
+	}
+	.main-top-bg {
+		z-index: 3;
+		width: 100%;
+		height: 50vh;
+		position: absolute;
+		background-size: cover;
+		background-image: url('../imgs/p5/bg1.png');
+		.txt1 {
+			position: absolute;
+			width: 22vw;
+			right: 31vw;
+			bottom: 23vh;
+		}
+	}
+	.main-bottom-bg {
+		z-index: 2;
+		background-color: white;
+		background-image: url('../imgs/p5/bg2.png');
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		background-repeat: repeat;
+		.txt1 {
+			position: absolute;
+			right: 9vw;
+			bottom: 21vh;
+			width: 22vw
+		}
+		.brand {
+			background-image: url('../imgs/p5/zi4.png');
+			position: absolute;
+			bottom: 6vh;
+			right: 4vw;
+			width: 16vw;
+		}
+	}
+	.person-man {
+		z-index: 5;
+		position: absolute;
+		top: 19vh;
+		right: 3vw;
+		height: 50vh;
+	}
+	.person-kun {
+		z-index: 7;
+		position: absolute;
+		bottom: 0;
+		left: 3vw;
+		height: 50vh;
+		transform: scale(0.9,0.9);
+	}
+	.person-nini {
+		z-index: 6;
+		position: absolute;
+		bottom: 3vh;
+		left: 21vw;
+		height: 50vh;
+	}
+}
+
+.page6 {
+
 }
