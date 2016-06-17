@@ -1,9 +1,17 @@
 @mixin vSplitter($height) {
 	.splitter {
 		display: inline-block;
-		background: white;
+		background: #fff;
 		height: $height;
-		border-right: 0.01em solid #fff;
+		border-right: 0.01rem solid #fff;
+	}
+}
+
+@mixin hSplitter($width) {
+	.splitter {
+		background: #fff;
+		width: $width;
+		border-top: 0.01rem solid #fff;
 	}
 }
 

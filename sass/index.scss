@@ -5,11 +5,12 @@ html, body {
 }
 
 .swiper-container {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .page1 {
+	display: none;
 	background-image: url("../imgs/p1/bg.jpg");
 	.brand {
 		@include hCenterAbsoluteDiv(10vh);
@@ -91,6 +92,7 @@ html, body {
 }
 
 .page2 {
+	display: none;
 	background-image: url("../imgs/p2/bg.jpg");
 	background-position: center, center;
 
@@ -122,6 +124,48 @@ html, body {
 }
 
 .page3 {
-	background-image: url("../imgs/p3/bg2.png");
-	background-position: center, center;
+	background-image: url("../imgs/p3/bg2.jpg");
+	background-position: right top;
+	background-size: cover;
+	.main-bg {
+		position: relative;
+		height: 100%;
+		background-size: cover;
+		background-position: -28.5vw 13.4vh;
+		background-image: url("../imgs/p3/bg1.png");
+		background-repeat: no-repeat;
+		z-index: 5;
+
+	}
+	.desc {
+		@include hSplitter(23vw);
+		.splitter {
+			position: absolute;
+			right: 5vw;
+			top: 14vh;
+		}
+		background-image: url("../imgs/p3/sbg1.png");
+		width: 90vw;
+		height: 66vh;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 3;
+		[class^="zi"] {
+			position: absolute;
+			right: 5vw;
+		}
+		.zi1 {
+			top: 6vh;
+			width: 30vw;
+		}
+		.zi2 {
+			top: 9vh;
+			width: 50vw;
+		}
+		.zi3 {
+			top: 15vh;
+			width: 20vw;
+		}
+	}
 }
