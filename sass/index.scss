@@ -229,6 +229,7 @@ html, body {
 }
 
 .page5 {
+	display: none;
 	background-color: $red;
 	.desc {
 		z-index: 4;
@@ -332,5 +333,128 @@ html, body {
 }
 
 .page6 {
+	.desc {
+		@include hSplitter(62vw, #000);
+		@include sRedDiv();
+		position: relative;
+		.s-red-div {
+			position: absolute;
+			top: 0.4vh;
+			right: 5vw;
+		}
+		.splitter {
+			position: absolute;
+			right: 5vw;
+		}
+		.splitter1 {
+			@extend .splitter;
+			top: 1.5vh;
+		}
+		.splitter2 {
+			@extend .splitter;
+			top: 8vh;
+			width: 43vw;
+		}
+		[class^="zi"] {
+			position: absolute;
+			right: 5vw;
+		}
+		.zi1 {
+			top: 3vh;
+			width: 62vw;
+		}
+		.zi2 {
+			top: 9vh;
+			width: 20vw;
+		}
+		.tips {
+			width: 28vw;
+			font-size: 0.875rem;
+			position: absolute;
+			top: 16vh;
+			right: 2vw;
+			line-height: 3vh;
+			transform: scale(0.8, 0.8);
+			span {
+				display: block;
+				text-align: end;
+			}
+		}
+		position: relative;
+		background-image: url("../imgs/p6/white-triangle.png");
+		width: 100vw;
+		height: 43vh;
+		margin-top: 5vh;
+		background-size: cover;
+		z-index: 5;
+	}
+
+	[class^="part-img"] {
+		position: absolute;
+	}
+
+	.part-img1 {
+		background-image: url("../imgs/p6/tu-17.png");
+		top: 5vh;
+		left: 0;
+		width: 30vw;
+		height: 13vh;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: -37px;
+	}
+	.part-img2 {
+		background-image: url("../imgs/p6/b5.jpg");
+		left: 101px;
+		top: 4vh;
+		width: 86vw;
+		height: 88.7vh;
+		transform: scale(0.7, 0.7);
+		background-repeat: no-repeat;
+	}
+	.part-img3 {
+		background-image: url("../imgs/p6/b1.png");
+		left: -47px;
+		top: 4vh;
+		width: 86vw;
+		height: 88.7vh;
+		transform: scale(0.7, 0.7);
+		background-repeat: no-repeat;
+	}
+	.part-img4 {
+		background-image: url("../imgs/p6/b2.png");
+		right: -47px;
+		top: 33vh;
+		width: 86vw;
+		height: 50.7vh;
+		transform: scale(0.7, 0.7);
+		background-repeat: no-repeat;
+	}
+	.part-img5 {
+		background-image: url("../imgs/p6/b3.png");
+		left: -38px;
+		bottom: -119px;
+		width: 64vw;
+		height: 50.7vh;
+		transform: scale(0.7, 0.8);
+		background-repeat: no-repeat;
+	}
+	.part-img6 {
+		background-image: url("../imgs/p6/b4.png");
+		bottom: -119px;
+		right: 25px;
+		width: 64vw;
+		height: 50.7vh;
+		transform: scale(0.7, 0.8);
+	}
+	.part-img7 {
+		background-image: url("../imgs/p6/b5.jpg");
+		bottom: -24px;
+		right: -6px;
+		width: 20vw;
+		height: 35vh;
+		background-position: -128px -7px;
+		transform: scale(0.8,0.8);
+	}
 
 }
