@@ -1,6 +1,14 @@
 @import "variable";
 @import "mixin";
 
+.fire-cracker {
+	position: absolute;
+    bottom: 5vh;
+    left: 47vw;
+    width: 8vw;
+    height: 10vh;
+}
+
 html, body {
 	height: 100%;
 }
@@ -11,7 +19,7 @@ html, body {
 }
 
 .page1 {
-	/*display: none;*/
+	display: none;
 	visibility:hidden;
 	background-image: url("../imgs/p1/bg.jpg");
 	.brand {
@@ -93,18 +101,21 @@ html, body {
 				top: 12.5vh;
 				right: 2vw;
 			}
-			&:last-child {
-				top: 12vh;
-				left: $box-width/2 - 8/2;
-				width: 8vw;
-				height: 10vh;
-			}
+			/*&:last-child {*/
+				/*top: 12vh;*/
+				/*left: $box-width/2 - 8/2;*/
+				/*width: 8vw;*/
+				/*height: 10vh;*/
+			/*}*/
 		}
+
+
 	}
 }
 
 .page2 {
 	display: none;
+	visibility: hidden;
 	background-image: url("../imgs/p2/bg.jpg");
 	background-position: center, center;
 
@@ -136,7 +147,8 @@ html, body {
 }
 
 .page3 {
-	display: none;
+	/*display: none;*/
+	visibility: hidden;
 	background-image: url("../imgs/p3/bg2.jpg");
 	background-position: right top;
 	background-size: cover;
