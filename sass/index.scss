@@ -12,6 +12,7 @@ html, body {
 
 .page1 {
 	/*display: none;*/
+	visibility:hidden;
 	background-image: url("../imgs/p1/bg.jpg");
 	.brand {
 		@include hCenterAbsoluteDiv(10vh);
