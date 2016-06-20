@@ -7,6 +7,7 @@
     left: 47vw;
     width: 8vw;
     height: 10vh;
+	z-index: 20;
 }
 
 html, body {
@@ -18,8 +19,10 @@ html, body {
 	height: 100%;
 }
 
+/*.page1,.page2,.page3,.page4,.page6 {*/
+	/*display: none;*/
+/*}*/
 .page1 {
-	display: none;
 	visibility:hidden;
 	background-image: url("../imgs/p1/bg.jpg");
 	.brand {
@@ -114,7 +117,6 @@ html, body {
 }
 
 .page2 {
-	display: none;
 	visibility: hidden;
 	background-image: url("../imgs/p2/bg.jpg");
 	background-position: center, center;
@@ -147,7 +149,6 @@ html, body {
 }
 
 .page3 {
-	/*display: none;*/
 	visibility: hidden;
 	background-image: url("../imgs/p3/bg2.jpg");
 	background-position: right top;
@@ -195,7 +196,7 @@ html, body {
 }
 
 .page4 {
-	display: none;
+	visibility: hidden;
 	background-image: url("../imgs/p4/bg1.png");
 	background-size: cover;
 	.main-bg {
@@ -252,13 +253,11 @@ html, body {
 }
 
 .page5 {
-	display: none;
+	visibility: hidden;
 	background-color: $red;
 	.desc {
-		z-index: 4;
 		@include hSplitter(77vw, #000);
 		@include sRedDiv();
-		position: relative;
 		.s-red-div {
 			position: absolute;
 			top: 0.4vh;
@@ -289,11 +288,14 @@ html, body {
 			top: 9vh;
 			width: 20vw;
 		}
+		z-index: 4;
 		background-color: white;
 		width: 85vw;
 		height: 14vh;
 		margin: 0 auto;
-		margin-top: 5vh;
+		position: absolute;
+		top: 5vh;
+		left: 7vw;
 	}
 	.main-top-bg {
 		z-index: 3;
@@ -356,7 +358,7 @@ html, body {
 }
 
 .page6 {
-	display: none;
+	visibility: hidden;
 	.desc {
 		@include hSplitter(62vw, #000);
 		@include sRedDiv();
